@@ -105,6 +105,6 @@ public class Student {
                 email + " | " +
                 phone + " | " +
                 address + " | " +
-                batch + " | ";
+                batch + "\n";
     }
 }

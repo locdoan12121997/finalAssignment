@@ -48,7 +48,7 @@ public class LecturerManager extends BaseState{
 
             case 6 :
                 MainState ms = new MainState();
-                ms.init_state();
+//                ms.init_state();
                 break;
 
             default :

@@ -4893,3 +4893,902 @@ from
 [10:56:46] binding parameter [5] as [VARCHAR] - [a]
 [10:56:46] binding parameter [6] as [VARCHAR] - [a]
 [10:56:46] binding parameter [7] as [VARCHAR] - [a]
+[19:09:49] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[19:09:52] 
+    drop table if exists lecturer cascade
+[19:09:52] 
+    drop table if exists student cascade
+[19:09:52] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[19:09:52] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[19:09:52] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[19:09:52] binding parameter [1] as [VARCHAR] - [a]
+[19:09:52] binding parameter [2] as [VARCHAR] - [a]
+[19:09:52] binding parameter [3] as [VARCHAR] - [a]
+[19:09:52] binding parameter [4] as [VARCHAR] - [a]
+[19:09:52] binding parameter [5] as [VARCHAR] - [a]
+[19:09:52] binding parameter [6] as [VARCHAR] - [a]
+[19:09:52] binding parameter [7] as [VARCHAR] - [a]
+[19:10:06] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[19:10:06] binding parameter [1] as [VARCHAR] - [a]
+[19:10:06] binding parameter [2] as [VARCHAR] - [a]
+[19:10:06] binding parameter [3] as [VARCHAR] - [b]
+[19:10:06] binding parameter [4] as [VARCHAR] - [a]
+[19:10:06] binding parameter [5] as [VARCHAR] - [b]
+[19:10:06] binding parameter [6] as [VARCHAR] - [a]
+[19:10:06] binding parameter [7] as [VARCHAR] - [a]
+[19:10:06] ERROR: duplicate key value violates unique constraint "student_pkey"
+  Detail: Key (studentid)=(a) already exists.
+[19:10:06] HHH000346: Error during managed flush [could not execute statement]
+[19:10:12] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[19:10:12] binding parameter [1] as [VARCHAR] - [a]
+[19:10:12] binding parameter [2] as [VARCHAR] - [a]
+[19:10:12] binding parameter [3] as [VARCHAR] - [b]
+[19:10:12] binding parameter [4] as [VARCHAR] - [a]
+[19:10:12] binding parameter [5] as [VARCHAR] - [b]
+[19:10:12] binding parameter [6] as [VARCHAR] - [a]
+[19:10:12] binding parameter [7] as [VARCHAR] - [b]
+[19:18:14] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[19:18:16] 
+    drop table if exists lecturer cascade
+[19:18:16] 
+    drop table if exists student cascade
+[19:18:16] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[19:18:16] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[19:18:16] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[19:18:16] binding parameter [1] as [VARCHAR] - [a]
+[19:18:16] binding parameter [2] as [VARCHAR] - [a]
+[19:18:16] binding parameter [3] as [VARCHAR] - [a]
+[19:18:16] binding parameter [4] as [VARCHAR] - [a]
+[19:18:16] binding parameter [5] as [VARCHAR] - [a]
+[19:18:16] binding parameter [6] as [VARCHAR] - [a]
+[19:18:16] binding parameter [7] as [VARCHAR] - [a]
+[19:18:20] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[19:19:46] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[19:19:48] 
+    drop table if exists lecturer cascade
+[19:19:48] 
+    drop table if exists student cascade
+[19:19:48] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[19:19:48] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[19:19:48] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[19:19:48] binding parameter [1] as [VARCHAR] - [a]
+[19:19:48] binding parameter [2] as [VARCHAR] - [a]
+[19:19:48] binding parameter [3] as [VARCHAR] - [a]
+[19:19:48] binding parameter [4] as [VARCHAR] - [a]
+[19:19:48] binding parameter [5] as [VARCHAR] - [a]
+[19:19:48] binding parameter [6] as [VARCHAR] - [a]
+[19:19:48] binding parameter [7] as [VARCHAR] - [a]
+[19:19:56] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[19:19:56] binding parameter [1] as [VARCHAR] - [b]
+[19:19:56] binding parameter [2] as [VARCHAR] - [b]
+[19:19:56] binding parameter [3] as [VARCHAR] - [b]
+[19:19:56] binding parameter [4] as [VARCHAR] - [b]
+[19:19:56] binding parameter [5] as [VARCHAR] - [b]
+[19:19:56] binding parameter [6] as [VARCHAR] - [b]
+[19:19:56] binding parameter [7] as [VARCHAR] - [b]
+[19:19:58] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[19:21:33] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[19:21:36] 
+    drop table if exists lecturer cascade
+[19:21:36] 
+    drop table if exists student cascade
+[19:21:36] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[19:21:36] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[19:21:36] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[19:21:36] binding parameter [1] as [VARCHAR] - [a]
+[19:21:36] binding parameter [2] as [VARCHAR] - [a]
+[19:21:36] binding parameter [3] as [VARCHAR] - [a]
+[19:21:36] binding parameter [4] as [VARCHAR] - [a]
+[19:21:36] binding parameter [5] as [VARCHAR] - [a]
+[19:21:36] binding parameter [6] as [VARCHAR] - [a]
+[19:21:36] binding parameter [7] as [VARCHAR] - [a]
+[19:21:42] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[19:21:42] binding parameter [1] as [VARCHAR] - [b]
+[19:21:42] binding parameter [2] as [VARCHAR] - [b]
+[19:21:42] binding parameter [3] as [VARCHAR] - [b]
+[19:21:42] binding parameter [4] as [VARCHAR] - [b]
+[19:21:42] binding parameter [5] as [VARCHAR] - [b]
+[19:21:42] binding parameter [6] as [VARCHAR] - [b]
+[19:21:42] binding parameter [7] as [VARCHAR] - [b]
+[19:21:45] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[19:32:27] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[19:32:29] 
+    drop table if exists lecturer cascade
+[19:32:29] 
+    drop table if exists student cascade
+[19:32:29] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[19:32:29] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[19:32:29] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[19:32:29] binding parameter [1] as [VARCHAR] - [b]
+[19:32:29] binding parameter [2] as [VARCHAR] - [b]
+[19:32:29] binding parameter [3] as [VARCHAR] - [b]
+[19:32:29] binding parameter [4] as [VARCHAR] - [b]
+[19:32:29] binding parameter [5] as [VARCHAR] - [b]
+[19:32:29] binding parameter [6] as [VARCHAR] - [b]
+[19:32:29] binding parameter [7] as [VARCHAR] - [b]
+[19:32:40] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[19:32:40] binding parameter [1] as [VARCHAR] - [abc]
+[19:32:40] binding parameter [2] as [VARCHAR] - [abc]
+[19:32:40] binding parameter [3] as [VARCHAR] - [abc]
+[19:32:40] binding parameter [4] as [VARCHAR] - [abc]
+[19:32:40] binding parameter [5] as [VARCHAR] - [abc]
+[19:32:40] binding parameter [6] as [VARCHAR] - [abc]
+[19:32:40] binding parameter [7] as [VARCHAR] - [abc]
+[19:33:47] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[19:33:49] 
+    drop table if exists lecturer cascade
+[19:33:49] 
+    drop table if exists student cascade
+[19:33:49] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[19:33:49] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[19:33:50] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[19:33:50] binding parameter [1] as [VARCHAR] - [b]
+[19:33:50] binding parameter [2] as [VARCHAR] - [b]
+[19:33:50] binding parameter [3] as [VARCHAR] - [b]
+[19:33:50] binding parameter [4] as [VARCHAR] - [b]
+[19:33:50] binding parameter [5] as [VARCHAR] - [b]
+[19:33:50] binding parameter [6] as [VARCHAR] - [b]
+[19:33:50] binding parameter [7] as [VARCHAR] - [b]
+[19:33:54] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[19:33:54] binding parameter [1] as [VARCHAR] - [%b%]
+[19:34:05] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[19:34:05] binding parameter [1] as [VARCHAR] - [bc]
+[19:34:05] binding parameter [2] as [VARCHAR] - [bc]
+[19:34:05] binding parameter [3] as [VARCHAR] - [bc]
+[19:34:05] binding parameter [4] as [VARCHAR] - [bc]
+[19:34:05] binding parameter [5] as [VARCHAR] - [bc]
+[19:34:05] binding parameter [6] as [VARCHAR] - [bc]
+[19:34:05] binding parameter [7] as [VARCHAR] - [bc]
+[19:34:15] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[19:34:15] binding parameter [1] as [VARCHAR] - [abcd]
+[19:34:15] binding parameter [2] as [VARCHAR] - [abcd]
+[19:34:15] binding parameter [3] as [VARCHAR] - [abcd]
+[19:34:15] binding parameter [4] as [VARCHAR] - [abcd]
+[19:34:15] binding parameter [5] as [VARCHAR] - [abcd]
+[19:34:15] binding parameter [6] as [VARCHAR] - [abcd]
+[19:34:15] binding parameter [7] as [VARCHAR] - [abcd]
+[19:34:21] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[19:34:21] binding parameter [1] as [VARCHAR] - [%bc%]
+[19:47:41] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[19:47:43] 
+    drop table if exists lecturer cascade
+[19:47:43] 
+    drop table if exists student cascade
+[19:47:43] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[19:47:43] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[19:47:43] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[19:47:43] binding parameter [1] as [VARCHAR] - [a]
+[19:48:00] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[19:48:02] 
+    drop table if exists lecturer cascade
+[19:48:02] 
+    drop table if exists student cascade
+[19:48:02] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[19:48:02] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[19:48:02] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[19:48:02] binding parameter [1] as [VARCHAR] - [a]
+[19:48:02] binding parameter [2] as [VARCHAR] - [a]
+[19:48:02] binding parameter [3] as [VARCHAR] - [a]
+[19:48:02] binding parameter [4] as [VARCHAR] - [a]
+[19:48:02] binding parameter [5] as [VARCHAR] - [a]
+[19:48:02] binding parameter [6] as [VARCHAR] - [a]
+[19:48:02] binding parameter [7] as [VARCHAR] - [a]
+[19:48:07] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[19:48:07] binding parameter [1] as [VARCHAR] - [a]
+[19:48:07] 
+    /* get current state finalAssignment.model.Student */ select
+        student_.studentId,
+        student_.address as address2_1_,
+        student_.batch as batch3_1_,
+        student_.dob as dob4_1_,
+        student_.email as email5_1_,
+        student_.name as name6_1_,
+        student_.phone as phone7_1_ 
+    from
+        student student_ 
+    where
+        student_.studentId=?
+[19:48:07] binding parameter [1] as [VARCHAR] - [a]
+[19:48:07] 
+    /* delete finalAssignment.model.Student */ delete 
+        from
+            student 
+        where
+            studentId=?
+[19:48:07] binding parameter [1] as [VARCHAR] - [a]
+[20:09:54] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[20:09:56] 
+    drop table if exists lecturer cascade
+[20:09:56] 
+    drop table if exists student cascade
+[20:09:56] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[20:09:56] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[20:09:56] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[20:09:56] binding parameter [1] as [VARCHAR] - [a]
+[20:09:56] binding parameter [2] as [VARCHAR] - [a]
+[20:09:56] binding parameter [3] as [VARCHAR] - [a]
+[20:09:56] binding parameter [4] as [VARCHAR] - [a]
+[20:09:56] binding parameter [5] as [VARCHAR] - [a]
+[20:09:56] binding parameter [6] as [VARCHAR] - [a]
+[20:09:56] binding parameter [7] as [VARCHAR] - [a]
+[20:24:37] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[20:24:40] 
+    drop table if exists lecturer cascade
+[20:24:40] 
+    drop table if exists student cascade
+[20:24:40] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[20:24:40] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[20:24:40] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[20:24:40] binding parameter [1] as [VARCHAR] - [a]
+[20:24:40] binding parameter [2] as [VARCHAR] - [a]
+[20:24:40] binding parameter [3] as [VARCHAR] - [a]
+[20:24:40] binding parameter [4] as [VARCHAR] - [a]
+[20:24:40] binding parameter [5] as [VARCHAR] - [a]
+[20:24:40] binding parameter [6] as [VARCHAR] - [a]
+[20:24:40] binding parameter [7] as [VARCHAR] - [a]
+[20:24:44] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[20:24:44] binding parameter [1] as [VARCHAR] - [a]
+[20:26:22] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[20:26:25] 
+    drop table if exists lecturer cascade
+[20:26:25] 
+    drop table if exists student cascade
+[20:26:25] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[20:26:25] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[20:26:25] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[20:26:25] binding parameter [1] as [VARCHAR] - [a]
+[20:26:25] binding parameter [2] as [VARCHAR] - [a]
+[20:26:25] binding parameter [3] as [VARCHAR] - [a]
+[20:26:25] binding parameter [4] as [VARCHAR] - [a]
+[20:26:25] binding parameter [5] as [VARCHAR] - [a]
+[20:26:25] binding parameter [6] as [VARCHAR] - [a]
+[20:26:25] binding parameter [7] as [VARCHAR] - [a]
+[20:26:29] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[20:26:29] binding parameter [1] as [VARCHAR] - [a]
+[20:33:45] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[20:33:47] 
+    drop table if exists lecturer cascade
+[20:33:47] 
+    drop table if exists student cascade
+[20:33:47] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[20:33:47] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[20:33:47] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[20:33:47] binding parameter [1] as [VARCHAR] - [a]
+[20:33:47] binding parameter [2] as [VARCHAR] - [a]
+[20:33:47] binding parameter [3] as [VARCHAR] - [a]
+[20:33:47] binding parameter [4] as [VARCHAR] - [a]
+[20:33:47] binding parameter [5] as [VARCHAR] - [a]
+[20:33:47] binding parameter [6] as [VARCHAR] - [a]
+[20:33:47] binding parameter [7] as [VARCHAR] - [a]
+[20:33:52] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[20:33:52] binding parameter [1] as [VARCHAR] - [a]
+[20:33:59] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[20:33:59] binding parameter [1] as [VARCHAR] - [a]
+[20:33:59] 
+    /* update
+        finalAssignment.model.Student */ update
+            student 
+        set
+            address=?,
+            batch=?,
+            dob=?,
+            email=?,
+            name=?,
+            phone=? 
+        where
+            studentId=?
+[20:33:59] binding parameter [1] as [VARCHAR] - [ab]
+[20:33:59] binding parameter [2] as [VARCHAR] - [ab]
+[20:33:59] binding parameter [3] as [VARCHAR] - [Birthday]
+[20:33:59] binding parameter [4] as [VARCHAR] - [ab]
+[20:33:59] binding parameter [5] as [VARCHAR] - [a]
+[20:33:59] binding parameter [6] as [VARCHAR] - [ab]
+[20:33:59] binding parameter [7] as [VARCHAR] - [a]
+[20:34:03] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[20:34:10] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[20:34:18] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[20:34:18] binding parameter [1] as [VARCHAR] - [b]
+[20:34:18] binding parameter [2] as [VARCHAR] - [b]
+[20:34:18] binding parameter [3] as [VARCHAR] - [b]
+[20:34:18] binding parameter [4] as [VARCHAR] - [b]
+[20:34:18] binding parameter [5] as [VARCHAR] - [b]
+[20:34:18] binding parameter [6] as [VARCHAR] - [b]
+[20:34:18] binding parameter [7] as [VARCHAR] - [b]
+[20:34:23] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[20:34:23] binding parameter [1] as [VARCHAR] - [b]
+[20:34:29] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[20:34:29] binding parameter [1] as [VARCHAR] - [b]
+[20:34:29] 
+    /* update
+        finalAssignment.model.Student */ update
+            student 
+        set
+            address=?,
+            batch=?,
+            dob=?,
+            email=?,
+            name=?,
+            phone=? 
+        where
+            studentId=?
+[20:34:29] binding parameter [1] as [VARCHAR] - [ba]
+[20:34:29] binding parameter [2] as [VARCHAR] - [ba]
+[20:34:29] binding parameter [3] as [VARCHAR] - [Birthday]
+[20:34:29] binding parameter [4] as [VARCHAR] - [ba]
+[20:34:29] binding parameter [5] as [VARCHAR] - [ba]
+[20:34:29] binding parameter [6] as [VARCHAR] - [ba]
+[20:34:29] binding parameter [7] as [VARCHAR] - [b]
+[20:34:31] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
