@@ -35,7 +35,6 @@ finalAssignment\control\BaseState.class
 finalAssignment\view\MainGui.class
 finalAssignment\view\StudentManageGui$1.class
 finalAssignment\view\GetIdUpdateLecturerGui.class
-finalAssignment\view\StudentManageGui$7.class
 finalAssignment\model\DataAccessLayerException.class
 finalAssignment\view\UpdateStudentGui$1.class
 finalAssignment\view\GetIdUpdateStudentGui.class

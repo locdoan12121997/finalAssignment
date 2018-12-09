@@ -33,6 +33,16 @@ public class MainGui extends BaseView {
                 currentFrame.dispatchEvent(new WindowEvent(currentFrame, WindowEvent.WINDOW_CLOSING));
             }
         });
+        lecturerManageButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame currentFrame = BaseView.getCurrentFrame();
+                currentFrame.getContentPane().removeAll();
+                LecturerManageGui lecturerManageGui = new LecturerManageGui();
+                currentFrame.setContentPane(lecturerManageGui.getMainPanel());
+                currentFrame.setVisible(true);
+            }
+        });
     }
 
     public JButton getExitButton() {

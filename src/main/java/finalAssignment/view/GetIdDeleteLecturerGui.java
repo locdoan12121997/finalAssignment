@@ -3,6 +3,7 @@ package finalAssignment.view;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
+import finalAssignment.control.LecturerManager;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,7 +20,15 @@ public class GetIdDeleteLecturerGui extends BaseView {
         deleteButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                LecturerManager lecturerManager = new LecturerManager();
+                lecturerManager.delete_lecturer(lecturerIdTextField.getText());
+                JOptionPane.showMessageDialog(null, "The Lecturer deleted");
 
+                JFrame currentFrame = BaseView.getCurrentFrame();
+                currentFrame.getContentPane().removeAll();
+                LecturerManageGui LecturerManageGui = new LecturerManageGui();
+                currentFrame.setContentPane(LecturerManageGui.getMainPanel());
+                currentFrame.setVisible(true);
             }
         });
     }
@@ -51,7 +60,7 @@ public class GetIdDeleteLecturerGui extends BaseView {
         final Spacer spacer1 = new Spacer();
         mainPanel.add(spacer1, new GridConstraints(0, 2, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         lecturerIdLabel = new JLabel();
-        lecturerIdLabel.setText("Student id");
+        lecturerIdLabel.setText("Lecturer id");
         mainPanel.add(lecturerIdLabel, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         lecturerIdTextField = new JTextField();
         lecturerIdTextField.setText("");

@@ -2,67 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c22e69ab-62e4-47f7-b2ea-42e328cd16ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/BaseView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateStudentGui.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateStudentGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateLecturerGui.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateLecturerGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalAssignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/finalAssignment.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hibernate_tutorial.log" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate_tutorial.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippet.txt" beforeDir="false" afterPath="$PROJECT_DIR$/snippet.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/control/LecturerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/control/LecturerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/control/MainState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/control/MainState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/control/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/control/StudentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/model/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/model/Lecturer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateLecturerGui.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateLecturerGui.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateLecturerGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateLecturerGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateStudentGui.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateStudentGui.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateStudentGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateStudentGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteLecturerGui.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteLecturerGui.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteLecturerGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteLecturerGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteStudentGui.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteStudentGui.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteStudentGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteStudentGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateLecturerGui.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateLecturerGui.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateLecturerGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateLecturerGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateStudentGui.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateStudentGui.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateStudentGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateStudentGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewLecturer.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewLecturer.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewLecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewLecturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewStudent.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewStudent.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/LecturerManageGui.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/LecturerManageGui.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/LecturerManageGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/LecturerManageGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/MainGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/MainGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/StudentManageGui.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/StudentManageGui.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/StudentManageGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/StudentManageGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewLecturerGui.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewLecturerGui.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewLecturerGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewLecturerGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewStudentGui.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewStudentGui.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewStudentGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewStudentGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/control/LecturerManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/control/LecturerManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/control/MainState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/control/MainState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/control/StudentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/control/StudentManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/model/Student.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/view/CreateLecturerGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/view/CreateLecturerGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/view/CreateStudentGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/view/CreateStudentGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/view/GetIdDeleteLecturerGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/view/GetIdDeleteLecturerGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/view/GetIdDeleteStudentGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/view/GetIdDeleteStudentGui.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/view/GetIdUpdateLecturerGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/view/GetIdUpdateLecturerGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/view/GetIdUpdateStudentGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/view/GetIdUpdateStudentGui.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/view/GetNameViewLecturer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/view/GetNameViewLecturer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/view/GetNameViewStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/view/GetNameViewStudent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/view/LecturerManageGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/view/LecturerManageGui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/view/MainGui$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/view/MainGui$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/view/MainGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/view/MainGui.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/view/StudentManageGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/view/StudentManageGui.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/view/ViewLecturerGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/view/ViewLecturerGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/finalAssignment/view/ViewStudentGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/finalAssignment/view/ViewStudentGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finalAssignment-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finalAssignment-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-finalAssignment.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-finalAssignment.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/finalAssignment.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/finalAssignment.AppTest.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,34 +60,34 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
-          <entry key="form" value="42" />
+          <entry key="form" value="53" />
           <entry key="iml" value="1" />
-          <entry key="java" value="166" />
+          <entry key="java" value="189" />
           <entry key="log" value="1" />
-          <entry key="txt" value="6" />
+          <entry key="txt" value="7" />
           <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="4" />
-          <entry key="GUI_DESIGNER_FORM" value="42" />
+          <entry key="GUI_DESIGNER_FORM" value="53" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="166" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="JAVA" value="189" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="XML" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4026" />
+          <entry key="java" value="4186" />
           <entry key="txt" value="3" />
           <entry key="xml" value="238" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4026" />
+          <entry key="JAVA" value="4186" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="238" />
         </counts>
@@ -130,68 +97,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/snippet.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+              <caret line="1" column="8" selection-start-line="1" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateStudentGui.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteLecturerGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+            <state relative-caret-position="330">
+              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
               <folding>
-                <element signature="e#912#913#0" expanded="true" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="initializer##0;class#UpdateStudentGui#0" />
-                <element signature="e#6758#6759#0" expanded="true" />
-                <element signature="e#6790#6791#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="initializer##0;class#GetIdDeleteLecturerGui#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateStudentGui.form">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteStudentGui.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="33" column="46" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="33" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/MainGui.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/StudentManageGui.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateLecturerGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="86" column="70" lean-forward="true" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="70" />
+            <state relative-caret-position="327">
+              <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
               <folding>
-                <element signature="initializer##0;class#StudentManageGui#0" expanded="true" />
-                <element signature="docComment;method#$$$setupUI$$$#0;class#StudentManageGui#0" />
-                <element signature="method#$$$setupUI$$$#0;class#StudentManageGui#0" />
-                <element signature="docComment;method#$$$getRootComponent$$$#0;class#StudentManageGui#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1411#1412#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateStudentGui.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewLecturerGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
               <folding>
-                <element signature="initializer##0;class#GetIdUpdateStudentGui#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="initializer##0;class#ViewLecturerGui#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewLecturerGui.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/MainGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="24" selection-end-column="46" />
+            <state relative-caret-position="225">
+              <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="initializer##0;class#MainGui#0" expanded="true" />
@@ -201,31 +190,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteStudentGui.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/model/Lecturer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/control/StudentManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/model/StudentDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="225">
+              <caret line="107" column="32" selection-start-line="107" selection-start-column="32" selection-end-line="107" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -241,7 +209,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tx</find>
       <find>hibernate_cfg.xml</find>
       <find>hibernat</find>
       <find>maven</find>
@@ -265,12 +232,13 @@
       <find>util</find>
       <find>Query</find>
       <find>current_session_context_class</find>
-      <find>student</find>
       <find>batch</find>
-      <find>Student</find>
       <find>size</find>
       <find>find</find>
       <find>update</find>
+      <find>backFromStudentButton</find>
+      <find>Student</find>
+      <find>student</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -279,8 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Downloads/countries.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/model/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/MainState.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/model/Db.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/DataAccessLayerException.java" />
@@ -292,44 +258,46 @@
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/model/StudentDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/model/AbstractDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/model/LecturerDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/model/Lecturer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate_cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewLecturerGui.form" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/control/LecturerManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/MainGui.form" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/StudentManageGui.form" />
         <option value="$PROJECT_DIR$/snippet.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateLecturerGui.form" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateLecturerGui.form" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewLecturer.form" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/LecturerManageGui.form" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewStudentGui.form" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewLecturer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateLecturerGui.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateLecturerGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/BaseView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/LecturerManageGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/control/MainState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/MainGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateStudentGui.form" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewLecturerGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateStudentGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewStudentGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/model/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewStudent.form" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewStudent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteLecturerGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteLecturerGui.form" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteStudentGui.form" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteStudentGui.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/StudentManageGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateStudentGui.form" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateStudentGui.form" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateStudentGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateStudentGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/StudentManageGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateLecturerGui.form" />
         <option value="$PROJECT_DIR$/src/main/java/finalAssignment/control/StudentManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateLecturerGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewLecturer.form" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewLecturer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/LecturerManageGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/control/LecturerManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateLecturerGui.form" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateLecturerGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateLecturerGui.form" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateLecturerGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/MainGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/model/Lecturer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewLecturerGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewLecturerGui.form" />
+        <option value="$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteLecturerGui.java" />
       </list>
     </option>
   </component>
@@ -397,6 +365,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -417,7 +394,47 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="GetIdDeleteLecturerGui" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="finalAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="GetIdDeleteStudentGui" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="finalAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="GetIdUpdateStudentGui" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="finalAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="GetNameViewStudent" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="finalAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="LecturerManageGui" type="e9f4de52:FormNode" />
             </path>
             <path>
               <item name="finalAssignment" type="b2602c69:ProjectViewProjectNode" />
@@ -438,6 +455,36 @@
               <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="StudentManageGui" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="finalAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="UpdateStudentGui" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="finalAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="ViewLecturerGui" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="finalAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="finalAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="ViewStudentGui" type="e9f4de52:FormNode" />
             </path>
             <path>
               <item name="finalAssignment" type="b2602c69:ProjectViewProjectNode" />
@@ -475,7 +522,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="331" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544362612312" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544366263815" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -579,16 +626,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/finalAssignment.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hibernate_tutorial.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-762">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/model/Db.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -624,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/model/Lecturer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/model/LecturerDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -651,9 +681,6 @@
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewLecturerGui.form">
-      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/control/BaseState.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -681,60 +708,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateLecturerGui.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateLecturerGui.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewLecturer.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/LecturerManageGui.form">
       <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/MainGui.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewLecturer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateLecturerGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateLecturerGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#CreateLecturerGui#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/BaseView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/LecturerManageGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="initializer##0;class#LecturerManageGui#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,88 +730,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewLecturerGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/control/LecturerManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewStudentGui.form">
       <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewStudentGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-          <folding>
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewStudent.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewStudent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="30" column="74" lean-forward="true" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteLecturerGui.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteLecturerGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="initializer##0;class#GetIdDeleteLecturerGui#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteStudentGui.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateStudentGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="40" column="56" lean-forward="true" selection-start-line="40" selection-start-column="56" selection-end-line="51" selection-end-column="46" />
-          <folding>
-            <element signature="initializer##0;class#CreateStudentGui#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/StudentManageGui.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateStudentGui.form">
@@ -840,54 +745,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateStudentGui.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteStudentGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/model/StudentDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/StudentManageGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="86" column="70" lean-forward="true" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="70" />
-          <folding>
-            <element signature="initializer##0;class#StudentManageGui#0" expanded="true" />
-            <element signature="docComment;method#$$$setupUI$$$#0;class#StudentManageGui#0" />
-            <element signature="method#$$$setupUI$$$#0;class#StudentManageGui#0" />
-            <element signature="docComment;method#$$$getRootComponent$$$#0;class#StudentManageGui#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateStudentGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <element signature="initializer##0;class#GetIdUpdateStudentGui#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateStudentGui.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/MainGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="24" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#MainGui#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -898,26 +759,215 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateStudentGui.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/StudentManageGui.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/StudentManageGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+        <state relative-caret-position="204">
+          <caret line="91" column="11" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="91" selection-end-column="11" />
           <folding>
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="initializer##0;class#UpdateStudentGui#0" />
-            <element signature="e#6758#6759#0" expanded="true" />
-            <element signature="e#6790#6791#0" expanded="true" />
+            <element signature="initializer##0;class#StudentManageGui#0" expanded="true" />
+            <element signature="docComment;method#$$$setupUI$$$#0;class#StudentManageGui#0" />
+            <element signature="method#$$$setupUI$$$#0;class#StudentManageGui#0" />
+            <element signature="docComment;method#$$$getRootComponent$$$#0;class#StudentManageGui#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateStudentGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="53" column="11" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="53" selection-end-column="11" />
+          <folding>
+            <element signature="initializer##0;class#CreateStudentGui#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateLecturerGui.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/control/StudentManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+        <state relative-caret-position="4">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/CreateLecturerGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="56" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2286#2287#0" expanded="true" />
+            <element signature="e#2318#2319#0" expanded="true" />
+            <element signature="initializer##0;class#CreateLecturerGui#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewStudentGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewStudent.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewStudent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="37" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewLecturer.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetNameViewLecturer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateStudentGui.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateStudentGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="35" column="11" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="35" selection-end-column="11" />
+          <folding>
+            <element signature="initializer##0;class#GetIdUpdateStudentGui#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/control/LecturerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateLecturerGui.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateStudentGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="72" column="5" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="72" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/UpdateLecturerGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateLecturerGui.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/LecturerManageGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="72" column="21" lean-forward="true" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4122#4123#0" expanded="true" />
+            <element signature="e#4154#4155#0" expanded="true" />
+            <element signature="initializer##0;class#LecturerManageGui#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdUpdateLecturerGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1411#1412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/MainGui.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/MainGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#MainGui#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/model/Lecturer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="107" column="32" selection-start-line="107" selection-start-column="32" selection-end-line="107" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewLecturerGui.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/ViewLecturerGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#ViewLecturerGui#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteStudentGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="33" column="46" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="33" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalAssignment/view/GetIdDeleteLecturerGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#GetIdDeleteLecturerGui#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -925,7 +975,7 @@
     <entry file="file://$PROJECT_DIR$/snippet.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+          <caret line="1" column="8" selection-start-line="1" selection-end-line="2" />
         </state>
       </provider>
     </entry>

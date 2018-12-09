@@ -2,9 +2,14 @@ package finalAssignment.view;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
+import finalAssignment.control.LecturerManager;
+import finalAssignment.model.Lecturer;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.List;
 
 public class LecturerManageGui extends BaseView {
     private JButton addLecturerButton;
@@ -16,6 +21,78 @@ public class LecturerManageGui extends BaseView {
     private JPanel mainPanel;
 
     public LecturerManageGui() {
+        addLecturerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame currentFrame = BaseView.getCurrentFrame();
+                currentFrame.getContentPane().removeAll();
+                CreateLecturerGui createLecturerGui = new CreateLecturerGui();
+                currentFrame.setContentPane(createLecturerGui.getMainPanel());
+                currentFrame.setVisible(true);
+            }
+        });
+        viewLecturerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame currentFrame = BaseView.getCurrentFrame();
+                currentFrame.getContentPane().removeAll();
+                ViewLecturerGui viewLecturerGui = new ViewLecturerGui();
+                currentFrame.setContentPane(viewLecturerGui.getMainPanel());
+
+                LecturerManager lecturerManager = new LecturerManager();
+                List<Lecturer> lecturer_list = lecturerManager.view_all_lecturers();
+
+                for (Lecturer lecturer : lecturer_list) {
+                    viewLecturerGui.getViewLecturerTextArea().append(lecturer.toString());
+                }
+                currentFrame.setVisible(true);
+            }
+        });
+        searchLecturerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame currentFrame = BaseView.getCurrentFrame();
+                currentFrame.getContentPane().removeAll();
+                GetNameViewLecturer getNameViewLecturer = new GetNameViewLecturer();
+                currentFrame.setContentPane(getNameViewLecturer.getMainPanel());
+                currentFrame.setVisible(true);
+            }
+        });
+        deleteLecturerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame currentFrame = BaseView.getCurrentFrame();
+                currentFrame.getContentPane().removeAll();
+                GetIdDeleteLecturerGui getIdDeleteLecturerGui = new GetIdDeleteLecturerGui();
+                currentFrame.setContentPane(getIdDeleteLecturerGui.getMainPanel());
+                currentFrame.setVisible(true);
+            }
+        });
+
+        backFromLecturerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame currentFrame = BaseView.getCurrentFrame();
+                currentFrame.getContentPane().removeAll();
+                MainGui mainGui = new MainGui();
+                currentFrame.setContentPane(mainGui.getMainPanel());
+                currentFrame.setVisible(true);
+            }
+        });
+        updateLecturerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame currentFrame = BaseView.getCurrentFrame();
+                currentFrame.getContentPane().removeAll();
+                GetIdUpdateLecturerGui getIdUpdateLecturerGui = new GetIdUpdateLecturerGui();
+                currentFrame.setContentPane(getIdUpdateLecturerGui.getMainPanel());
+                currentFrame.setVisible(true);
+            }
+        });
+    }
+
+    public JPanel getMainPanel() {
+        return mainPanel;
     }
 
     {

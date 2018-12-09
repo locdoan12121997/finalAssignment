@@ -105,6 +105,6 @@ public class Lecturer {
                 email + " | " +
                 phone + " | " +
                 address + " | " +
-                department + " | ";
+                department + "\n";
     }
 }

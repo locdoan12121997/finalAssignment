@@ -2,16 +2,43 @@ package finalAssignment.view;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
+import finalAssignment.control.LecturerManager;
+import finalAssignment.model.Lecturer;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.List;
 
 public class GetNameViewLecturer extends BaseView {
     private JLabel nameLabel;
     private JTextField nameTextField;
     private JPanel mainPanel;
+    private JButton searchButton;
+
+    public JPanel getMainPanel() {
+        return mainPanel;
+    }
 
     public GetNameViewLecturer() {
+        searchButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame currentFrame = BaseView.getCurrentFrame();
+                currentFrame.getContentPane().removeAll();
+                ViewLecturerGui viewLecturerGui = new ViewLecturerGui();
+                currentFrame.setContentPane(viewLecturerGui.getMainPanel());
+
+                LecturerManager lecturerManager = new LecturerManager();
+                List<Lecturer> lecturer_list = lecturerManager.find_lecturer(nameTextField.getText());
+
+                for (Lecturer lecturer : lecturer_list) {
+                    viewLecturerGui.getViewLecturerTextArea().append(lecturer.toString());
+                }
+                currentFrame.setVisible(true);
+            }
+        });
     }
 
     {
@@ -30,13 +57,16 @@ public class GetNameViewLecturer extends BaseView {
      */
     private void $$$setupUI$$$() {
         mainPanel = new JPanel();
-        mainPanel.setLayout(new GridLayoutManager(1, 2, new Insets(0, 0, 0, 0), -1, -1));
+        mainPanel.setLayout(new GridLayoutManager(2, 2, new Insets(0, 0, 0, 0), -1, -1));
         nameLabel = new JLabel();
         nameLabel.setText("Name");
         mainPanel.add(nameLabel, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         nameTextField = new JTextField();
         nameTextField.setText("");
         mainPanel.add(nameTextField, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        searchButton = new JButton();
+        searchButton.setText("Search");
+        mainPanel.add(searchButton, new GridConstraints(1, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
     }
 
     /**

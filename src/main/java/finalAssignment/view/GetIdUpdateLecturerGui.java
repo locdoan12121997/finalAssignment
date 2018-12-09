@@ -2,16 +2,39 @@ package finalAssignment.view;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
+import finalAssignment.model.Lecturer;
+import finalAssignment.model.LecturerDao;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GetIdUpdateLecturerGui extends BaseView {
     private JLabel lecturerIdLabel;
     private JTextField lecturerIdTextField;
     private JPanel mainPanel;
+    private JButton chooseButton;
 
     public GetIdUpdateLecturerGui() {
+        chooseButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame currentFrame = BaseView.getCurrentFrame();
+                String LecturerId = lecturerIdTextField.getText();
+                LecturerDao LecturerDao = new LecturerDao();
+                Lecturer Lecturer = LecturerDao.find(LecturerId);
+                currentFrame.getContentPane().removeAll();
+                UpdateLecturerGui updateLecturerGui = new UpdateLecturerGui();
+                updateLecturerGui.fillInformationIntoTextfield(Lecturer);
+                currentFrame.setContentPane(updateLecturerGui.getMainPanel());
+                currentFrame.setVisible(true);
+            }
+        });
+    }
+
+    public JPanel getMainPanel() {
+        return mainPanel;
     }
 
     {
@@ -30,13 +53,16 @@ public class GetIdUpdateLecturerGui extends BaseView {
      */
     private void $$$setupUI$$$() {
         mainPanel = new JPanel();
-        mainPanel.setLayout(new GridLayoutManager(1, 2, new Insets(0, 0, 0, 0), -1, -1));
+        mainPanel.setLayout(new GridLayoutManager(2, 2, new Insets(0, 0, 0, 0), -1, -1));
         lecturerIdLabel = new JLabel();
         lecturerIdLabel.setText("Lecturer id");
         mainPanel.add(lecturerIdLabel, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         lecturerIdTextField = new JTextField();
         lecturerIdTextField.setText("");
         mainPanel.add(lecturerIdTextField, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        chooseButton = new JButton();
+        chooseButton.setText("Choose");
+        mainPanel.add(chooseButton, new GridConstraints(1, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
     }
 
     /**

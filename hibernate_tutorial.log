@@ -5792,3 +5792,735 @@ from
         student0_.phone as phone7_1_ 
     from
         student student0_
+[21:26:43] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[21:26:45] 
+    drop table if exists lecturer cascade
+[21:26:45] 
+    drop table if exists student cascade
+[21:26:45] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[21:26:45] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[21:26:45] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[21:26:45] binding parameter [1] as [VARCHAR] - [a]
+[21:26:45] binding parameter [2] as [VARCHAR] - [a]
+[21:26:45] binding parameter [3] as [VARCHAR] - [a]
+[21:26:45] binding parameter [4] as [VARCHAR] - [a]
+[21:26:45] binding parameter [5] as [VARCHAR] - [a]
+[21:26:45] binding parameter [6] as [VARCHAR] - [a]
+[21:26:45] binding parameter [7] as [VARCHAR] - [a]
+[21:26:48] 
+    /* 
+from
+    finalAssignment.model.Lecturer */ select
+        lecturer0_.lecturerId as lecturer1_0_,
+        lecturer0_.address as address2_0_,
+        lecturer0_.department as departme3_0_,
+        lecturer0_.dob as dob4_0_,
+        lecturer0_.email as email5_0_,
+        lecturer0_.name as name6_0_,
+        lecturer0_.phone as phone7_0_ 
+    from
+        lecturer lecturer0_
+[21:28:21] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[21:28:23] 
+    drop table if exists lecturer cascade
+[21:28:23] 
+    drop table if exists student cascade
+[21:28:23] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[21:28:23] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[21:28:24] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[21:28:24] binding parameter [1] as [VARCHAR] - [a]
+[21:28:24] binding parameter [2] as [VARCHAR] - [a]
+[21:28:24] binding parameter [3] as [VARCHAR] - [a]
+[21:28:24] binding parameter [4] as [VARCHAR] - [a]
+[21:28:24] binding parameter [5] as [VARCHAR] - [a]
+[21:28:24] binding parameter [6] as [VARCHAR] - [a]
+[21:28:24] binding parameter [7] as [VARCHAR] - [a]
+[21:28:31] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[21:28:31] binding parameter [1] as [VARCHAR] - [b]
+[21:28:31] binding parameter [2] as [VARCHAR] - [b]
+[21:28:31] binding parameter [3] as [VARCHAR] - [b]
+[21:28:31] binding parameter [4] as [VARCHAR] - [b]
+[21:28:31] binding parameter [5] as [VARCHAR] - [b]
+[21:28:31] binding parameter [6] as [VARCHAR] - [b]
+[21:28:31] binding parameter [7] as [VARCHAR] - [b]
+[21:28:34] 
+    /* 
+from
+    finalAssignment.model.Lecturer */ select
+        lecturer0_.lecturerId as lecturer1_0_,
+        lecturer0_.address as address2_0_,
+        lecturer0_.department as departme3_0_,
+        lecturer0_.dob as dob4_0_,
+        lecturer0_.email as email5_0_,
+        lecturer0_.name as name6_0_,
+        lecturer0_.phone as phone7_0_ 
+    from
+        lecturer lecturer0_
+[21:28:38] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[21:28:38] binding parameter [1] as [VARCHAR] - [%b%]
+[21:28:54] 
+    /* 
+from
+    finalAssignment.model.Lecturer as cl 
+where
+    cl.name like ? */ select
+        lecturer0_.lecturerId as lecturer1_0_,
+        lecturer0_.address as address2_0_,
+        lecturer0_.department as departme3_0_,
+        lecturer0_.dob as dob4_0_,
+        lecturer0_.email as email5_0_,
+        lecturer0_.name as name6_0_,
+        lecturer0_.phone as phone7_0_ 
+    from
+        lecturer lecturer0_ 
+    where
+        lecturer0_.name like ?
+[21:28:54] binding parameter [1] as [VARCHAR] - [%b%]
+[21:29:03] 
+    /* 
+from
+    finalAssignment.model.Lecturer as cl 
+where
+    cl.name like ? */ select
+        lecturer0_.lecturerId as lecturer1_0_,
+        lecturer0_.address as address2_0_,
+        lecturer0_.department as departme3_0_,
+        lecturer0_.dob as dob4_0_,
+        lecturer0_.email as email5_0_,
+        lecturer0_.name as name6_0_,
+        lecturer0_.phone as phone7_0_ 
+    from
+        lecturer lecturer0_ 
+    where
+        lecturer0_.name like ?
+[21:29:03] binding parameter [1] as [VARCHAR] - [%a%]
+[21:29:14] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[21:29:14] binding parameter [1] as [VARCHAR] - [%b%]
+[21:29:19] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[21:29:19] binding parameter [1] as [VARCHAR] - [%b%]
+[21:29:32] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[21:29:32] binding parameter [1] as [VARCHAR] - [%b%]
+[21:29:41] 
+    /* 
+from
+    finalAssignment.model.Lecturer as cl 
+where
+    cl.name like ? */ select
+        lecturer0_.lecturerId as lecturer1_0_,
+        lecturer0_.address as address2_0_,
+        lecturer0_.department as departme3_0_,
+        lecturer0_.dob as dob4_0_,
+        lecturer0_.email as email5_0_,
+        lecturer0_.name as name6_0_,
+        lecturer0_.phone as phone7_0_ 
+    from
+        lecturer lecturer0_ 
+    where
+        lecturer0_.name like ?
+[21:29:41] binding parameter [1] as [VARCHAR] - [%b%]
+[21:31:21] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[21:31:24] 
+    drop table if exists lecturer cascade
+[21:31:24] 
+    drop table if exists student cascade
+[21:31:24] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[21:31:24] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[21:31:24] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[21:31:24] binding parameter [1] as [VARCHAR] - [a]
+[21:31:24] binding parameter [2] as [VARCHAR] - [a]
+[21:31:24] binding parameter [3] as [VARCHAR] - [a]
+[21:31:24] binding parameter [4] as [VARCHAR] - [a]
+[21:31:24] binding parameter [5] as [VARCHAR] - [a]
+[21:31:24] binding parameter [6] as [VARCHAR] - [a]
+[21:31:24] binding parameter [7] as [VARCHAR] - [a]
+[21:31:32] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[21:31:32] binding parameter [1] as [VARCHAR] - [a]
+[21:31:32] binding parameter [2] as [VARCHAR] - [a]
+[21:31:32] binding parameter [3] as [VARCHAR] - [a]
+[21:31:32] binding parameter [4] as [VARCHAR] - [a]
+[21:31:32] binding parameter [5] as [VARCHAR] - [a]
+[21:31:32] binding parameter [6] as [VARCHAR] - [a]
+[21:31:32] binding parameter [7] as [VARCHAR] - [a]
+[21:31:35] 
+    /* 
+from
+    finalAssignment.model.Lecturer */ select
+        lecturer0_.lecturerId as lecturer1_0_,
+        lecturer0_.address as address2_0_,
+        lecturer0_.department as departme3_0_,
+        lecturer0_.dob as dob4_0_,
+        lecturer0_.email as email5_0_,
+        lecturer0_.name as name6_0_,
+        lecturer0_.phone as phone7_0_ 
+    from
+        lecturer lecturer0_
+[21:31:43] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[21:31:43] binding parameter [1] as [VARCHAR] - [b]
+[21:31:43] binding parameter [2] as [VARCHAR] - [b]
+[21:31:43] binding parameter [3] as [VARCHAR] - [b]
+[21:31:43] binding parameter [4] as [VARCHAR] - [b]
+[21:31:43] binding parameter [5] as [VARCHAR] - [b]
+[21:31:43] binding parameter [6] as [VARCHAR] - [b]
+[21:31:43] binding parameter [7] as [VARCHAR] - [b]
+[21:32:01] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[21:32:01] binding parameter [1] as [VARCHAR] - [abc]
+[21:32:01] binding parameter [2] as [VARCHAR] - [abc]
+[21:32:01] binding parameter [3] as [VARCHAR] - [abc]
+[21:32:01] binding parameter [4] as [VARCHAR] - [abc]
+[21:32:01] binding parameter [5] as [VARCHAR] - [abc]
+[21:32:01] binding parameter [6] as [VARCHAR] - [abc]
+[21:32:01] binding parameter [7] as [VARCHAR] - [abc]
+[21:32:03] 
+    /* 
+from
+    finalAssignment.model.Lecturer */ select
+        lecturer0_.lecturerId as lecturer1_0_,
+        lecturer0_.address as address2_0_,
+        lecturer0_.department as departme3_0_,
+        lecturer0_.dob as dob4_0_,
+        lecturer0_.email as email5_0_,
+        lecturer0_.name as name6_0_,
+        lecturer0_.phone as phone7_0_ 
+    from
+        lecturer lecturer0_
+[21:32:07] 
+    /* 
+from
+    finalAssignment.model.Lecturer as cl 
+where
+    cl.name like ? */ select
+        lecturer0_.lecturerId as lecturer1_0_,
+        lecturer0_.address as address2_0_,
+        lecturer0_.department as departme3_0_,
+        lecturer0_.dob as dob4_0_,
+        lecturer0_.email as email5_0_,
+        lecturer0_.name as name6_0_,
+        lecturer0_.phone as phone7_0_ 
+    from
+        lecturer lecturer0_ 
+    where
+        lecturer0_.name like ?
+[21:32:07] binding parameter [1] as [VARCHAR] - [%b%]
+[21:32:11] 
+    /* 
+from
+    finalAssignment.model.Lecturer as cl 
+where
+    cl.name like ? */ select
+        lecturer0_.lecturerId as lecturer1_0_,
+        lecturer0_.address as address2_0_,
+        lecturer0_.department as departme3_0_,
+        lecturer0_.dob as dob4_0_,
+        lecturer0_.email as email5_0_,
+        lecturer0_.name as name6_0_,
+        lecturer0_.phone as phone7_0_ 
+    from
+        lecturer lecturer0_ 
+    where
+        lecturer0_.name like ?
+[21:32:11] binding parameter [1] as [VARCHAR] - [%a%]
+[21:34:15] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[21:34:17] 
+    drop table if exists lecturer cascade
+[21:34:17] 
+    drop table if exists student cascade
+[21:34:17] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[21:34:17] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[21:34:17] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[21:34:17] binding parameter [1] as [VARCHAR] - [a]
+[21:34:17] binding parameter [2] as [VARCHAR] - [a]
+[21:34:17] binding parameter [3] as [VARCHAR] - [a]
+[21:34:17] binding parameter [4] as [VARCHAR] - [a]
+[21:34:17] binding parameter [5] as [VARCHAR] - [a]
+[21:34:17] binding parameter [6] as [VARCHAR] - [a]
+[21:34:17] binding parameter [7] as [VARCHAR] - [a]
+[21:34:21] 
+    select
+        lecturer0_.lecturerId as lecturer1_0_0_,
+        lecturer0_.address as address2_0_0_,
+        lecturer0_.department as departme3_0_0_,
+        lecturer0_.dob as dob4_0_0_,
+        lecturer0_.email as email5_0_0_,
+        lecturer0_.name as name6_0_0_,
+        lecturer0_.phone as phone7_0_0_ 
+    from
+        lecturer lecturer0_ 
+    where
+        lecturer0_.lecturerId=?
+[21:34:21] binding parameter [1] as [VARCHAR] - [a]
+[21:34:21] 
+    /* get current state finalAssignment.model.Lecturer */ select
+        lecturer_.lecturerId,
+        lecturer_.address as address2_0_,
+        lecturer_.department as departme3_0_,
+        lecturer_.dob as dob4_0_,
+        lecturer_.email as email5_0_,
+        lecturer_.name as name6_0_,
+        lecturer_.phone as phone7_0_ 
+    from
+        lecturer lecturer_ 
+    where
+        lecturer_.lecturerId=?
+[21:34:21] binding parameter [1] as [VARCHAR] - [a]
+[21:34:21] 
+    /* delete finalAssignment.model.Lecturer */ delete 
+        from
+            lecturer 
+        where
+            lecturerId=?
+[21:34:21] binding parameter [1] as [VARCHAR] - [a]
+[21:34:25] 
+    /* 
+from
+    finalAssignment.model.Lecturer */ select
+        lecturer0_.lecturerId as lecturer1_0_,
+        lecturer0_.address as address2_0_,
+        lecturer0_.department as departme3_0_,
+        lecturer0_.dob as dob4_0_,
+        lecturer0_.email as email5_0_,
+        lecturer0_.name as name6_0_,
+        lecturer0_.phone as phone7_0_ 
+    from
+        lecturer lecturer0_
+[21:34:34] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[21:34:34] binding parameter [1] as [VARCHAR] - [a]
+[21:34:34] binding parameter [2] as [VARCHAR] - [a]
+[21:34:34] binding parameter [3] as [VARCHAR] - [a]
+[21:34:34] binding parameter [4] as [VARCHAR] - [a]
+[21:34:34] binding parameter [5] as [VARCHAR] - [a]
+[21:34:34] binding parameter [6] as [VARCHAR] - [a]
+[21:34:34] binding parameter [7] as [VARCHAR] - [a]
+[21:34:36] 
+    /* 
+from
+    finalAssignment.model.Lecturer */ select
+        lecturer0_.lecturerId as lecturer1_0_,
+        lecturer0_.address as address2_0_,
+        lecturer0_.department as departme3_0_,
+        lecturer0_.dob as dob4_0_,
+        lecturer0_.email as email5_0_,
+        lecturer0_.name as name6_0_,
+        lecturer0_.phone as phone7_0_ 
+    from
+        lecturer lecturer0_
+[21:34:41] 
+    select
+        lecturer0_.lecturerId as lecturer1_0_0_,
+        lecturer0_.address as address2_0_0_,
+        lecturer0_.department as departme3_0_0_,
+        lecturer0_.dob as dob4_0_0_,
+        lecturer0_.email as email5_0_0_,
+        lecturer0_.name as name6_0_0_,
+        lecturer0_.phone as phone7_0_0_ 
+    from
+        lecturer lecturer0_ 
+    where
+        lecturer0_.lecturerId=?
+[21:34:41] binding parameter [1] as [VARCHAR] - [a]
+[21:34:46] 
+    select
+        lecturer0_.lecturerId as lecturer1_0_0_,
+        lecturer0_.address as address2_0_0_,
+        lecturer0_.department as departme3_0_0_,
+        lecturer0_.dob as dob4_0_0_,
+        lecturer0_.email as email5_0_0_,
+        lecturer0_.name as name6_0_0_,
+        lecturer0_.phone as phone7_0_0_ 
+    from
+        lecturer lecturer0_ 
+    where
+        lecturer0_.lecturerId=?
+[21:34:46] binding parameter [1] as [VARCHAR] - [a]
+[21:34:46] 
+    /* update
+        finalAssignment.model.Lecturer */ update
+            lecturer 
+        set
+            address=?,
+            department=?,
+            dob=?,
+            email=?,
+            name=?,
+            phone=? 
+        where
+            lecturerId=?
+[21:34:46] binding parameter [1] as [VARCHAR] - [ab]
+[21:34:46] binding parameter [2] as [VARCHAR] - [ab]
+[21:34:46] binding parameter [3] as [VARCHAR] - [ab]
+[21:34:46] binding parameter [4] as [VARCHAR] - [ab]
+[21:34:46] binding parameter [5] as [VARCHAR] - [ab]
+[21:34:46] binding parameter [6] as [VARCHAR] - [ab]
+[21:34:46] binding parameter [7] as [VARCHAR] - [a]
+[21:34:48] 
+    /* 
+from
+    finalAssignment.model.Lecturer */ select
+        lecturer0_.lecturerId as lecturer1_0_,
+        lecturer0_.address as address2_0_,
+        lecturer0_.department as departme3_0_,
+        lecturer0_.dob as dob4_0_,
+        lecturer0_.email as email5_0_,
+        lecturer0_.name as name6_0_,
+        lecturer0_.phone as phone7_0_ 
+    from
+        lecturer lecturer0_
+[21:38:04] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[21:38:06] 
+    drop table if exists lecturer cascade
+[21:38:06] 
+    drop table if exists student cascade
+[21:38:06] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[21:38:06] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[21:38:07] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[21:38:07] binding parameter [1] as [VARCHAR] - [a]
+[21:38:07] binding parameter [2] as [VARCHAR] - [aa]
+[21:38:07] binding parameter [3] as [VARCHAR] - [a]
+[21:38:07] binding parameter [4] as [VARCHAR] - [a]
+[21:38:07] binding parameter [5] as [VARCHAR] - [a]
+[21:38:07] binding parameter [6] as [VARCHAR] - [a]
+[21:38:07] binding parameter [7] as [VARCHAR] - [a]
+[21:38:09] 
+    /* 
+from
+    finalAssignment.model.Lecturer */ select
+        lecturer0_.lecturerId as lecturer1_0_,
+        lecturer0_.address as address2_0_,
+        lecturer0_.department as departme3_0_,
+        lecturer0_.dob as dob4_0_,
+        lecturer0_.email as email5_0_,
+        lecturer0_.name as name6_0_,
+        lecturer0_.phone as phone7_0_ 
+    from
+        lecturer lecturer0_
+[21:38:14] 
+    select
+        lecturer0_.lecturerId as lecturer1_0_0_,
+        lecturer0_.address as address2_0_0_,
+        lecturer0_.department as departme3_0_0_,
+        lecturer0_.dob as dob4_0_0_,
+        lecturer0_.email as email5_0_0_,
+        lecturer0_.name as name6_0_0_,
+        lecturer0_.phone as phone7_0_0_ 
+    from
+        lecturer lecturer0_ 
+    where
+        lecturer0_.lecturerId=?
+[21:38:14] binding parameter [1] as [VARCHAR] - [a]
+[21:38:14] 
+    /* get current state finalAssignment.model.Lecturer */ select
+        lecturer_.lecturerId,
+        lecturer_.address as address2_0_,
+        lecturer_.department as departme3_0_,
+        lecturer_.dob as dob4_0_,
+        lecturer_.email as email5_0_,
+        lecturer_.name as name6_0_,
+        lecturer_.phone as phone7_0_ 
+    from
+        lecturer lecturer_ 
+    where
+        lecturer_.lecturerId=?
+[21:38:14] binding parameter [1] as [VARCHAR] - [a]
+[21:38:14] 
+    /* delete finalAssignment.model.Lecturer */ delete 
+        from
+            lecturer 
+        where
+            lecturerId=?
+[21:38:14] binding parameter [1] as [VARCHAR] - [a]
+[21:38:26] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[21:38:26] binding parameter [1] as [VARCHAR] - [a]
+[21:38:26] binding parameter [2] as [VARCHAR] - [a]
+[21:38:26] binding parameter [3] as [VARCHAR] - [a]
+[21:38:26] binding parameter [4] as [VARCHAR] - [a]
+[21:38:26] binding parameter [5] as [VARCHAR] - [a]
+[21:38:26] binding parameter [6] as [VARCHAR] - [a]
+[21:38:26] binding parameter [7] as [VARCHAR] - [a]
+[21:38:30] 
+    select
+        lecturer0_.lecturerId as lecturer1_0_0_,
+        lecturer0_.address as address2_0_0_,
+        lecturer0_.department as departme3_0_0_,
+        lecturer0_.dob as dob4_0_0_,
+        lecturer0_.email as email5_0_0_,
+        lecturer0_.name as name6_0_0_,
+        lecturer0_.phone as phone7_0_0_ 
+    from
+        lecturer lecturer0_ 
+    where
+        lecturer0_.lecturerId=?
+[21:38:30] binding parameter [1] as [VARCHAR] - [a]
+[21:38:33] 
+    select
+        lecturer0_.lecturerId as lecturer1_0_0_,
+        lecturer0_.address as address2_0_0_,
+        lecturer0_.department as departme3_0_0_,
+        lecturer0_.dob as dob4_0_0_,
+        lecturer0_.email as email5_0_0_,
+        lecturer0_.name as name6_0_0_,
+        lecturer0_.phone as phone7_0_0_ 
+    from
+        lecturer lecturer0_ 
+    where
+        lecturer0_.lecturerId=?
+[21:38:33] binding parameter [1] as [VARCHAR] - [a]
+[21:38:33] 
+    /* update
+        finalAssignment.model.Lecturer */ update
+            lecturer 
+        set
+            address=?,
+            department=?,
+            dob=?,
+            email=?,
+            name=?,
+            phone=? 
+        where
+            lecturerId=?
+[21:38:33] binding parameter [1] as [VARCHAR] - [a]
+[21:38:33] binding parameter [2] as [VARCHAR] - [a]
+[21:38:33] binding parameter [3] as [VARCHAR] - [a]
+[21:38:33] binding parameter [4] as [VARCHAR] - [a]
+[21:38:33] binding parameter [5] as [VARCHAR] - [b]
+[21:38:33] binding parameter [6] as [VARCHAR] - [a]
+[21:38:33] binding parameter [7] as [VARCHAR] - [a]
