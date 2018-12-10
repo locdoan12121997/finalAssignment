@@ -5,10 +5,12 @@ import finalAssignment.model.StudentDao;
 
 import java.util.List;
 
-public class StudentManager extends BaseState{
+public class StudentManager{
 
     public void update_student(Student student) {
         StudentDao student_dao = new StudentDao();
+        StudentValidator studentValidator = new StudentValidator();
+        studentValidator.validateStudent(student);
         student_dao.update(student);
     }
 
@@ -35,6 +37,8 @@ public class StudentManager extends BaseState{
 
     public void create_student(Student student) {
         StudentDao stu_dao = new StudentDao();
+        StudentValidator studentValidator = new StudentValidator();
+        studentValidator.validateStudent(student);
         stu_dao.create(student);
     }
 

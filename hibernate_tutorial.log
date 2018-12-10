@@ -6524,3 +6524,2894 @@ from
 [21:38:33] binding parameter [5] as [VARCHAR] - [b]
 [21:38:33] binding parameter [6] as [VARCHAR] - [a]
 [21:38:33] binding parameter [7] as [VARCHAR] - [a]
+[01:55:32] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[01:55:34] 
+    drop table if exists lecturer cascade
+[01:55:35] 
+    drop table if exists student cascade
+[01:55:35] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[01:55:35] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[01:55:35] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[01:55:35] binding parameter [1] as [VARCHAR] - [a]
+[01:55:35] binding parameter [2] as [VARCHAR] - [a]
+[01:55:35] binding parameter [3] as [VARCHAR] - [aa]
+[01:55:35] binding parameter [4] as [VARCHAR] - [a]
+[01:55:35] binding parameter [5] as [VARCHAR] - [a]
+[01:55:35] binding parameter [6] as [VARCHAR] - [aa]
+[01:55:35] binding parameter [7] as [VARCHAR] - [a]
+[01:55:37] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[01:55:41] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[01:55:41] binding parameter [1] as [VARCHAR] - [%a%]
+[01:55:47] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[01:55:47] binding parameter [1] as [VARCHAR] - [a]
+[01:55:47] 
+    /* get current state finalAssignment.model.Student */ select
+        student_.studentId,
+        student_.address as address2_1_,
+        student_.batch as batch3_1_,
+        student_.dob as dob4_1_,
+        student_.email as email5_1_,
+        student_.name as name6_1_,
+        student_.phone as phone7_1_ 
+    from
+        student student_ 
+    where
+        student_.studentId=?
+[01:55:47] binding parameter [1] as [VARCHAR] - [a]
+[01:55:47] 
+    /* delete finalAssignment.model.Student */ delete 
+        from
+            student 
+        where
+            studentId=?
+[01:55:47] binding parameter [1] as [VARCHAR] - [a]
+[01:55:50] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[01:55:50] binding parameter [1] as [VARCHAR] - []
+[01:56:18] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[01:56:20] 
+    drop table if exists lecturer cascade
+[01:56:20] 
+    drop table if exists student cascade
+[01:56:20] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[01:56:20] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[01:56:20] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[01:56:20] binding parameter [1] as [VARCHAR] - [a]
+[01:56:20] binding parameter [2] as [VARCHAR] - [aa]
+[01:56:20] binding parameter [3] as [VARCHAR] - [a]
+[01:56:20] binding parameter [4] as [VARCHAR] - [aa]
+[01:56:20] binding parameter [5] as [VARCHAR] - [a]
+[01:56:20] binding parameter [6] as [VARCHAR] - [a]
+[01:56:20] binding parameter [7] as [VARCHAR] - [a]
+[01:56:29] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[01:56:29] binding parameter [1] as [VARCHAR] - [a]
+[01:56:39] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[01:56:39] binding parameter [1] as [VARCHAR] - [a]
+[01:56:39] 
+    /* update
+        finalAssignment.model.Student */ update
+            student 
+        set
+            address=?,
+            batch=?,
+            dob=?,
+            email=?,
+            name=?,
+            phone=? 
+        where
+            studentId=?
+[01:56:39] binding parameter [1] as [VARCHAR] - [a]
+[01:56:39] binding parameter [2] as [VARCHAR] - [aa]
+[01:56:39] binding parameter [3] as [VARCHAR] - [a]
+[01:56:39] binding parameter [4] as [VARCHAR] - [aa]
+[01:56:39] binding parameter [5] as [VARCHAR] - [a]
+[01:56:39] binding parameter [6] as [VARCHAR] - [a]
+[01:56:39] binding parameter [7] as [VARCHAR] - [a]
+[01:56:54] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[01:56:54] binding parameter [1] as [VARCHAR] - [a]
+[01:56:54] binding parameter [2] as [VARCHAR] - [a]
+[01:56:54] binding parameter [3] as [VARCHAR] - [a]
+[01:56:54] binding parameter [4] as [VARCHAR] - [a]
+[01:56:54] binding parameter [5] as [VARCHAR] - [a]
+[01:56:54] binding parameter [6] as [VARCHAR] - [a]
+[01:56:54] binding parameter [7] as [VARCHAR] - [a]
+[01:56:58] 
+    /* 
+from
+    finalAssignment.model.Lecturer */ select
+        lecturer0_.lecturerId as lecturer1_0_,
+        lecturer0_.address as address2_0_,
+        lecturer0_.department as departme3_0_,
+        lecturer0_.dob as dob4_0_,
+        lecturer0_.email as email5_0_,
+        lecturer0_.name as name6_0_,
+        lecturer0_.phone as phone7_0_ 
+    from
+        lecturer lecturer0_
+[02:50:14] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[02:50:16] 
+    drop table if exists lecturer cascade
+[02:50:16] 
+    drop table if exists student cascade
+[02:50:16] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[02:50:16] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[02:50:16] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[02:50:16] binding parameter [1] as [VARCHAR] - [a]
+[02:50:16] binding parameter [2] as [VARCHAR] - [a]
+[02:50:16] binding parameter [3] as [VARCHAR] - [a]
+[02:50:16] binding parameter [4] as [VARCHAR] - [a]
+[02:50:16] binding parameter [5] as [VARCHAR] - [a]
+[02:50:16] binding parameter [6] as [VARCHAR] - [a]
+[02:50:16] binding parameter [7] as [VARCHAR] - [a]
+[02:50:20] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[02:50:24] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[02:50:24] binding parameter [1] as [VARCHAR] - [%a%]
+[03:07:13] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[03:07:15] 
+    drop table if exists lecturer cascade
+[03:07:15] 
+    drop table if exists student cascade
+[03:07:15] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[03:07:15] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[03:07:16] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[03:07:16] binding parameter [1] as [VARCHAR] - [a]
+[03:07:16] binding parameter [2] as [VARCHAR] - [a]
+[03:07:16] binding parameter [3] as [VARCHAR] - [a]
+[03:07:16] binding parameter [4] as [VARCHAR] - [a]
+[03:07:16] binding parameter [5] as [VARCHAR] - [a]
+[03:07:16] binding parameter [6] as [VARCHAR] - [a]
+[03:07:16] binding parameter [7] as [VARCHAR] - [a]
+[03:38:22] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[03:38:25] 
+    drop table if exists lecturer cascade
+[03:38:25] 
+    drop table if exists student cascade
+[03:38:25] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[03:38:25] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[03:38:25] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[03:38:25] binding parameter [1] as [VARCHAR] - [a]
+[03:38:25] binding parameter [2] as [VARCHAR] - [a]
+[03:38:25] binding parameter [3] as [VARCHAR] - [a]
+[03:38:25] binding parameter [4] as [VARCHAR] - [a]
+[03:38:25] binding parameter [5] as [VARCHAR] - [a]
+[03:38:25] binding parameter [6] as [VARCHAR] - [a]
+[03:38:25] binding parameter [7] as [VARCHAR] - [a]
+[03:38:40] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[03:38:40] binding parameter [1] as [VARCHAR] - [abc]
+[03:38:40] binding parameter [2] as [VARCHAR] - [abc]
+[03:38:40] binding parameter [3] as [VARCHAR] - [abc]
+[03:38:40] binding parameter [4] as [VARCHAR] - [abc]
+[03:38:40] binding parameter [5] as [VARCHAR] - [abc]
+[03:38:40] binding parameter [6] as [VARCHAR] - [abc]
+[03:38:40] binding parameter [7] as [VARCHAR] - [abc]
+[03:38:50] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[03:38:50] binding parameter [1] as [VARCHAR] - [asdf]
+[03:38:50] binding parameter [2] as [VARCHAR] - [asdf]
+[03:38:50] binding parameter [3] as [VARCHAR] - [asdf]
+[03:38:50] binding parameter [4] as [VARCHAR] - [asdf]
+[03:38:50] binding parameter [5] as [VARCHAR] - [asdf]
+[03:38:50] binding parameter [6] as [VARCHAR] - [asdf]
+[03:38:50] binding parameter [7] as [VARCHAR] - [asdf]
+[03:39:02] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[03:41:06] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[03:41:08] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[03:41:08] binding parameter [1] as [VARCHAR] - [a]
+[03:41:08] binding parameter [2] as [VARCHAR] - [a]
+[03:41:08] binding parameter [3] as [VARCHAR] - [a]
+[03:41:08] binding parameter [4] as [VARCHAR] - [a]
+[03:41:08] binding parameter [5] as [VARCHAR] - [a]
+[03:41:08] binding parameter [6] as [VARCHAR] - [a]
+[03:41:08] binding parameter [7] as [VARCHAR] - [a]
+[03:41:08] ERROR: duplicate key value violates unique constraint "student_pkey"
+  Detail: Key (studentid)=(a) already exists.
+[03:41:08] HHH000346: Error during managed flush [could not execute statement]
+[03:41:42] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[03:41:42] binding parameter [1] as [VARCHAR] - [abc]
+[03:41:42] binding parameter [2] as [VARCHAR] - [abc]
+[03:41:42] binding parameter [3] as [VARCHAR] - [abc]
+[03:41:42] binding parameter [4] as [VARCHAR] - [abc]
+[03:41:42] binding parameter [5] as [VARCHAR] - [abc]
+[03:41:42] binding parameter [6] as [VARCHAR] - [abc]
+[03:41:42] binding parameter [7] as [VARCHAR] - [abc]
+[03:41:42] ERROR: duplicate key value violates unique constraint "student_pkey"
+  Detail: Key (studentid)=(abc) already exists.
+[03:41:42] HHH000346: Error during managed flush [could not execute statement]
+[03:41:59] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[03:41:59] binding parameter [1] as [VARCHAR] - [c]
+[03:41:59] binding parameter [2] as [VARCHAR] - [c]
+[03:41:59] binding parameter [3] as [VARCHAR] - [c]
+[03:41:59] binding parameter [4] as [VARCHAR] - [c]
+[03:41:59] binding parameter [5] as [VARCHAR] - [c]
+[03:41:59] binding parameter [6] as [VARCHAR] - [c]
+[03:41:59] binding parameter [7] as [VARCHAR] - [c]
+[03:42:02] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[03:42:11] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[03:42:11] binding parameter [1] as [VARCHAR] - [%a%]
+[03:42:15] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[03:42:15] binding parameter [1] as [VARCHAR] - [%c%]
+[03:42:24] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[03:42:24] binding parameter [1] as [VARCHAR] - [c]
+[03:42:24] 
+    /* get current state finalAssignment.model.Student */ select
+        student_.studentId,
+        student_.address as address2_1_,
+        student_.batch as batch3_1_,
+        student_.dob as dob4_1_,
+        student_.email as email5_1_,
+        student_.name as name6_1_,
+        student_.phone as phone7_1_ 
+    from
+        student student_ 
+    where
+        student_.studentId=?
+[03:42:24] binding parameter [1] as [VARCHAR] - [c]
+[03:42:24] 
+    /* delete finalAssignment.model.Student */ delete 
+        from
+            student 
+        where
+            studentId=?
+[03:42:24] binding parameter [1] as [VARCHAR] - [c]
+[03:42:26] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[03:42:33] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[03:42:33] binding parameter [1] as [VARCHAR] - [c]
+[03:42:33] binding parameter [2] as [VARCHAR] - [c]
+[03:42:33] binding parameter [3] as [VARCHAR] - [c]
+[03:42:33] binding parameter [4] as [VARCHAR] - [c]
+[03:42:33] binding parameter [5] as [VARCHAR] - [c]
+[03:42:33] binding parameter [6] as [VARCHAR] - [c]
+[03:42:33] binding parameter [7] as [VARCHAR] - [c]
+[03:42:40] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[03:46:47] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[03:46:49] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[03:55:03] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[03:55:03] binding parameter [1] as [VARCHAR] - [%a%]
+[03:55:08] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[03:55:08] binding parameter [1] as [VARCHAR] - [%a%]
+[03:56:28] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[03:56:28] binding parameter [1] as [VARCHAR] - [%a%]
+[03:57:12] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[03:57:12] binding parameter [1] as [VARCHAR] - [%a%]
+[04:00:46] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[04:00:46] binding parameter [1] as [VARCHAR] - [%a%]
+[04:11:20] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[04:11:20] binding parameter [1] as [VARCHAR] - [a]
+[04:11:20] 
+    /* get current state finalAssignment.model.Student */ select
+        student_.studentId,
+        student_.address as address2_1_,
+        student_.batch as batch3_1_,
+        student_.dob as dob4_1_,
+        student_.email as email5_1_,
+        student_.name as name6_1_,
+        student_.phone as phone7_1_ 
+    from
+        student student_ 
+    where
+        student_.studentId=?
+[04:11:20] binding parameter [1] as [VARCHAR] - [a]
+[04:11:20] 
+    /* delete finalAssignment.model.Student */ delete 
+        from
+            student 
+        where
+            studentId=?
+[04:11:20] binding parameter [1] as [VARCHAR] - [a]
+[04:11:22] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[04:12:02] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[04:12:02] binding parameter [1] as [VARCHAR] - [abc]
+[04:12:02] 
+    /* get current state finalAssignment.model.Student */ select
+        student_.studentId,
+        student_.address as address2_1_,
+        student_.batch as batch3_1_,
+        student_.dob as dob4_1_,
+        student_.email as email5_1_,
+        student_.name as name6_1_,
+        student_.phone as phone7_1_ 
+    from
+        student student_ 
+    where
+        student_.studentId=?
+[04:12:02] binding parameter [1] as [VARCHAR] - [abc]
+[04:12:02] 
+    /* delete finalAssignment.model.Student */ delete 
+        from
+            student 
+        where
+            studentId=?
+[04:12:02] binding parameter [1] as [VARCHAR] - [abc]
+[04:20:03] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[04:20:03] binding parameter [1] as [VARCHAR] - [a]
+[04:20:28] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[04:20:31] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[04:20:31] binding parameter [1] as [VARCHAR] - [a]
+[04:20:31] binding parameter [2] as [VARCHAR] - [a]
+[04:20:31] binding parameter [3] as [VARCHAR] - [a]
+[04:20:31] binding parameter [4] as [VARCHAR] - [a]
+[04:20:31] binding parameter [5] as [VARCHAR] - [a]
+[04:20:31] binding parameter [6] as [VARCHAR] - [a]
+[04:20:31] binding parameter [7] as [VARCHAR] - [a]
+[04:20:40] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[04:20:40] binding parameter [1] as [VARCHAR] - [abc]
+[04:20:40] binding parameter [2] as [VARCHAR] - [abc]
+[04:20:40] binding parameter [3] as [VARCHAR] - [abc]
+[04:20:40] binding parameter [4] as [VARCHAR] - [abc]
+[04:20:40] binding parameter [5] as [VARCHAR] - [abc]
+[04:20:40] binding parameter [6] as [VARCHAR] - [abc]
+[04:20:40] binding parameter [7] as [VARCHAR] - [abc]
+[04:20:43] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[04:20:48] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[04:20:48] binding parameter [1] as [VARCHAR] - [a]
+[04:20:57] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[04:20:57] binding parameter [1] as [VARCHAR] - [a]
+[04:20:57] 
+    /* update
+        finalAssignment.model.Student */ update
+            student 
+        set
+            address=?,
+            batch=?,
+            dob=?,
+            email=?,
+            name=?,
+            phone=? 
+        where
+            studentId=?
+[04:20:57] binding parameter [1] as [VARCHAR] - [a]
+[04:20:57] binding parameter [2] as [VARCHAR] - [a]
+[04:20:57] binding parameter [3] as [VARCHAR] - [a]
+[04:20:57] binding parameter [4] as [VARCHAR] - [a]
+[04:20:57] binding parameter [5] as [VARCHAR] - [a]
+[04:20:57] binding parameter [6] as [VARCHAR] - [a]
+[04:20:57] binding parameter [7] as [VARCHAR] - [a]
+[04:21:01] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[04:21:01] binding parameter [1] as [VARCHAR] - [a]
+[04:21:02] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[04:21:02] binding parameter [1] as [VARCHAR] - [a]
+[04:21:02] 
+    /* update
+        finalAssignment.model.Student */ update
+            student 
+        set
+            address=?,
+            batch=?,
+            dob=?,
+            email=?,
+            name=?,
+            phone=? 
+        where
+            studentId=?
+[04:21:02] binding parameter [1] as [VARCHAR] - [a]
+[04:21:02] binding parameter [2] as [VARCHAR] - [a]
+[04:21:02] binding parameter [3] as [VARCHAR] - [a]
+[04:21:02] binding parameter [4] as [VARCHAR] - [a]
+[04:21:02] binding parameter [5] as [VARCHAR] - [a]
+[04:21:02] binding parameter [6] as [VARCHAR] - [a]
+[04:21:02] binding parameter [7] as [VARCHAR] - [a]
+[04:26:03] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[04:26:03] binding parameter [1] as [VARCHAR] - [a]
+[04:27:14] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[04:27:14] binding parameter [1] as [VARCHAR] - [a]
+[04:27:14] 
+    /* update
+        finalAssignment.model.Student */ update
+            student 
+        set
+            address=?,
+            batch=?,
+            dob=?,
+            email=?,
+            name=?,
+            phone=? 
+        where
+            studentId=?
+[04:27:14] binding parameter [1] as [VARCHAR] - [a]
+[04:27:14] binding parameter [2] as [VARCHAR] - [a]
+[04:27:14] binding parameter [3] as [VARCHAR] - [a]
+[04:27:14] binding parameter [4] as [VARCHAR] - [a]
+[04:27:14] binding parameter [5] as [VARCHAR] - [a]
+[04:27:14] binding parameter [6] as [VARCHAR] - [a]
+[04:27:14] binding parameter [7] as [VARCHAR] - [a]
+[04:27:26] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[04:27:26] binding parameter [1] as [VARCHAR] - [a]
+[04:27:27] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[04:27:27] binding parameter [1] as [VARCHAR] - [a]
+[04:27:27] 
+    /* update
+        finalAssignment.model.Student */ update
+            student 
+        set
+            address=?,
+            batch=?,
+            dob=?,
+            email=?,
+            name=?,
+            phone=? 
+        where
+            studentId=?
+[04:27:27] binding parameter [1] as [VARCHAR] - [a]
+[04:27:27] binding parameter [2] as [VARCHAR] - [a]
+[04:27:27] binding parameter [3] as [VARCHAR] - [a]
+[04:27:27] binding parameter [4] as [VARCHAR] - [a]
+[04:27:27] binding parameter [5] as [VARCHAR] - [a]
+[04:27:27] binding parameter [6] as [VARCHAR] - [a]
+[04:27:27] binding parameter [7] as [VARCHAR] - [a]
+[09:50:58] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[09:54:31] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[09:55:47] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[10:02:34] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[10:02:36] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:02:36] binding parameter [1] as [VARCHAR] - [asdf]
+[10:02:36] binding parameter [2] as [VARCHAR] - [ads]
+[10:02:36] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:02:36] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:02:36] binding parameter [5] as [VARCHAR] - [loc]
+[10:02:36] binding parameter [6] as [VARCHAR] - [0908769326]
+[10:02:36] binding parameter [7] as [VARCHAR] - [gt00000]
+[10:02:41] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[10:11:08] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[10:11:11] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:11:11] binding parameter [1] as [VARCHAR] - [asdf]
+[10:11:11] binding parameter [2] as [VARCHAR] - [asdf]
+[10:11:11] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:11:11] binding parameter [4] as [VARCHAR] - [rick@gmail.com]
+[10:11:11] binding parameter [5] as [VARCHAR] - [rick]
+[10:11:11] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:11:11] binding parameter [7] as [VARCHAR] - [gt00001]
+[10:11:13] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[10:15:57] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[10:15:59] 
+    drop table if exists lecturer cascade
+[10:15:59] 
+    drop table if exists student cascade
+[10:15:59] 
+    create table lecturer (
+        lecturerId varchar(255) not null,
+        address varchar(255),
+        department varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (lecturerId)
+    )
+[10:16:00] 
+    create table student (
+        studentId varchar(255) not null,
+        address varchar(255),
+        batch varchar(255),
+        dob varchar(255),
+        email varchar(255),
+        name varchar(255),
+        phone varchar(255),
+        primary key (studentId)
+    )
+[10:16:00] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:16:00] binding parameter [1] as [VARCHAR] - [adf]
+[10:16:00] binding parameter [2] as [VARCHAR] - [asdf]
+[10:16:00] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:16:00] binding parameter [4] as [VARCHAR] - [asdf@gmail.com]
+[10:16:00] binding parameter [5] as [VARCHAR] - [cha]
+[10:16:00] binding parameter [6] as [VARCHAR] - [0987654123]
+[10:16:00] binding parameter [7] as [VARCHAR] - [gc13234]
+[10:16:11] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[10:16:19] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[10:16:19] binding parameter [1] as [VARCHAR] - [%a%]
+[10:17:01] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:17:01] binding parameter [1] as [VARCHAR] - [adsf]
+[10:17:01] binding parameter [2] as [VARCHAR] - [adsf]
+[10:17:01] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:17:01] binding parameter [4] as [VARCHAR] - [thu@gmail.com]
+[10:17:01] binding parameter [5] as [VARCHAR] - [abc]
+[10:17:01] binding parameter [6] as [VARCHAR] - [1324567863]
+[10:17:01] binding parameter [7] as [VARCHAR] - [gt12346]
+[10:17:35] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:17:35] binding parameter [1] as [VARCHAR] - [adf]
+[10:17:35] binding parameter [2] as [VARCHAR] - [asdf]
+[10:17:35] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:17:35] binding parameter [4] as [VARCHAR] - [adsf@gmail.com]
+[10:17:35] binding parameter [5] as [VARCHAR] - [thao]
+[10:17:35] binding parameter [6] as [VARCHAR] - [1234567894]
+[10:17:35] binding parameter [7] as [VARCHAR] - [gc09876]
+[10:28:56] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[10:28:59] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:28:59] binding parameter [1] as [VARCHAR] - [adsf]
+[10:28:59] binding parameter [2] as [VARCHAR] - [adsf]
+[10:28:59] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:28:59] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:28:59] binding parameter [5] as [VARCHAR] - [61958]
+[10:28:59] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:28:59] binding parameter [7] as [VARCHAR] - [GT83551]
+[10:29:52] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[10:30:48] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[10:33:43] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10000]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10000]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10002]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10002]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10004]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10004]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10006]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10006]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10008]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10008]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10010]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10010]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10012]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10012]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10014]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10014]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10016]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10016]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10018]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10018]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10020]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10020]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10022]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10022]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10024]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10024]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10026]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10026]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10028]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10028]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10030]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10030]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10032]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10032]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10034]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10034]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10036]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10036]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10038]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10038]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10040]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10040]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10042]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10042]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10044]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10044]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10046]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10046]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10048]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10048]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10050]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10050]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10052]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10052]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10054]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10054]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10056]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10056]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10058]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10058]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10060]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10060]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10062]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10062]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10064]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10064]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10066]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10066]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10068]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10068]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10070]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10070]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10072]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10072]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10074]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10074]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10076]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10076]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10078]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10078]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10080]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:45] binding parameter [7] as [VARCHAR] - [GT10080]
+[10:33:45] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:45] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:45] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:45] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:45] binding parameter [5] as [VARCHAR] - [GT10082]
+[10:33:45] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:46] binding parameter [7] as [VARCHAR] - [GT10082]
+[10:33:46] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:46] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:46] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:46] binding parameter [5] as [VARCHAR] - [GT10084]
+[10:33:46] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:46] binding parameter [7] as [VARCHAR] - [GT10084]
+[10:33:46] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:46] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:46] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:46] binding parameter [5] as [VARCHAR] - [GT10086]
+[10:33:46] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:46] binding parameter [7] as [VARCHAR] - [GT10086]
+[10:33:46] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:46] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:46] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:46] binding parameter [5] as [VARCHAR] - [GT10088]
+[10:33:46] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:46] binding parameter [7] as [VARCHAR] - [GT10088]
+[10:33:46] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:46] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:46] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:46] binding parameter [5] as [VARCHAR] - [GT10090]
+[10:33:46] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:46] binding parameter [7] as [VARCHAR] - [GT10090]
+[10:33:46] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:46] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:46] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:46] binding parameter [5] as [VARCHAR] - [GT10092]
+[10:33:46] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:46] binding parameter [7] as [VARCHAR] - [GT10092]
+[10:33:46] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:46] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:46] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:46] binding parameter [5] as [VARCHAR] - [GT10094]
+[10:33:46] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:46] binding parameter [7] as [VARCHAR] - [GT10094]
+[10:33:46] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:46] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:46] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:46] binding parameter [5] as [VARCHAR] - [GT10096]
+[10:33:46] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:46] binding parameter [7] as [VARCHAR] - [GT10096]
+[10:33:46] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:33:46] binding parameter [1] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [2] as [VARCHAR] - [adsf]
+[10:33:46] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:33:46] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:33:46] binding parameter [5] as [VARCHAR] - [GT10098]
+[10:33:46] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:33:46] binding parameter [7] as [VARCHAR] - [GT10098]
+[10:41:02] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[10:41:04] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:04] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:04] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:04] binding parameter [5] as [VARCHAR] - [10000000]
+[10:41:04] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:04] binding parameter [7] as [VARCHAR] - [10000000]
+[10:41:04] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:04] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:04] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:04] binding parameter [5] as [VARCHAR] - [10000002]
+[10:41:04] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:04] binding parameter [7] as [VARCHAR] - [10000002]
+[10:41:04] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:04] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:04] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:04] binding parameter [5] as [VARCHAR] - [10000004]
+[10:41:04] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:04] binding parameter [7] as [VARCHAR] - [10000004]
+[10:41:04] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:04] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:04] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:04] binding parameter [5] as [VARCHAR] - [10000006]
+[10:41:04] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:04] binding parameter [7] as [VARCHAR] - [10000006]
+[10:41:04] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:04] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:04] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:04] binding parameter [5] as [VARCHAR] - [10000008]
+[10:41:04] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:04] binding parameter [7] as [VARCHAR] - [10000008]
+[10:41:04] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:04] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:04] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:04] binding parameter [5] as [VARCHAR] - [10000010]
+[10:41:04] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:04] binding parameter [7] as [VARCHAR] - [10000010]
+[10:41:04] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:04] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:04] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:04] binding parameter [5] as [VARCHAR] - [10000012]
+[10:41:04] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:04] binding parameter [7] as [VARCHAR] - [10000012]
+[10:41:04] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:04] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:04] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:04] binding parameter [5] as [VARCHAR] - [10000014]
+[10:41:04] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:04] binding parameter [7] as [VARCHAR] - [10000014]
+[10:41:04] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:04] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:04] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:04] binding parameter [5] as [VARCHAR] - [10000016]
+[10:41:04] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:04] binding parameter [7] as [VARCHAR] - [10000016]
+[10:41:04] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:04] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:04] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:04] binding parameter [5] as [VARCHAR] - [10000018]
+[10:41:04] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:04] binding parameter [7] as [VARCHAR] - [10000018]
+[10:41:04] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:04] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:04] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:04] binding parameter [5] as [VARCHAR] - [10000020]
+[10:41:04] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:04] binding parameter [7] as [VARCHAR] - [10000020]
+[10:41:04] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:04] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:04] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:04] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:04] binding parameter [5] as [VARCHAR] - [10000022]
+[10:41:04] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:04] binding parameter [7] as [VARCHAR] - [10000022]
+[10:41:04] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000024]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000024]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000026]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000026]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000028]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000028]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000030]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000030]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000032]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000032]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000034]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000034]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000036]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000036]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000038]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000038]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000040]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000040]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000042]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000042]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000044]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000044]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000046]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000046]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000048]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000048]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000050]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000050]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000052]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000052]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000054]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000054]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000056]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000056]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000058]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000058]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000060]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000060]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000062]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000062]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000064]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000064]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000066]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000066]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000068]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000068]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000070]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000070]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000072]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000072]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000074]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000074]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000076]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000076]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000078]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000078]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000080]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000080]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000082]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000082]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000084]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000084]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000086]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000086]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000088]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000088]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000090]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000090]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000092]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000092]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000094]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000094]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000096]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000096]
+[10:41:05] 
+    /* insert finalAssignment.model.Lecturer
+        */ insert 
+        into
+            lecturer
+            (address, department, dob, email, name, phone, lecturerId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[10:41:05] binding parameter [1] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [2] as [VARCHAR] - [adsf]
+[10:41:05] binding parameter [3] as [VARCHAR] - [12-12-1997]
+[10:41:05] binding parameter [4] as [VARCHAR] - [loc@gmail.com]
+[10:41:05] binding parameter [5] as [VARCHAR] - [10000098]
+[10:41:05] binding parameter [6] as [VARCHAR] - [0981980153]
+[10:41:05] binding parameter [7] as [VARCHAR] - [10000098]
+[11:34:23] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[11:35:12] 
+    /* insert finalAssignment.model.Student
+        */ insert 
+        into
+            student
+            (address, batch, dob, email, name, phone, studentId) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+[11:35:12] binding parameter [1] as [VARCHAR] - [asdf]
+[11:35:12] binding parameter [2] as [VARCHAR] - [asdsf]
+[11:35:12] binding parameter [3] as [VARCHAR] - [31-12-1997]
+[11:35:12] binding parameter [4] as [VARCHAR] - [asdf@gmail.com]
+[11:35:12] binding parameter [5] as [VARCHAR] - [loc1324]
+[11:35:12] binding parameter [6] as [VARCHAR] - [0654123450]
+[11:35:12] binding parameter [7] as [VARCHAR] - [GC99997]
+[11:35:20] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[11:36:14] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[11:36:16] 
+    /* 
+from
+    finalAssignment.model.Student as cl 
+where
+    cl.name like ? */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_ 
+    where
+        student0_.name like ?
+[11:36:16] binding parameter [1] as [VARCHAR] - [%a%]
+[11:36:34] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[11:36:34] binding parameter [1] as [VARCHAR] - [gc99997]
+[11:37:10] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[11:37:12] 
+    /* 
+from
+    finalAssignment.model.Student */ select
+        student0_.studentId as studentI1_1_,
+        student0_.address as address2_1_,
+        student0_.batch as batch3_1_,
+        student0_.dob as dob4_1_,
+        student0_.email as email5_1_,
+        student0_.name as name6_1_,
+        student0_.phone as phone7_1_ 
+    from
+        student student0_
+[11:37:29] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[11:37:31] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[11:37:31] binding parameter [1] as [VARCHAR] - [gc13234]
+[11:37:50] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[11:37:50] binding parameter [1] as [VARCHAR] - [gc13234]
+[11:38:00] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[11:38:00] binding parameter [1] as [VARCHAR] - [gc13234]
+[11:38:05] 
+    select
+        student0_.studentId as studentI1_1_0_,
+        student0_.address as address2_1_0_,
+        student0_.batch as batch3_1_0_,
+        student0_.dob as dob4_1_0_,
+        student0_.email as email5_1_0_,
+        student0_.name as name6_1_0_,
+        student0_.phone as phone7_1_0_ 
+    from
+        student student0_ 
+    where
+        student0_.studentId=?
+[11:38:05] binding parameter [1] as [VARCHAR] - [gc13234]
+[11:38:05] 
+    /* update
+        finalAssignment.model.Student */ update
+            student 
+        set
+            address=?,
+            batch=?,
+            dob=?,
+            email=?,
+            name=?,
+            phone=? 
+        where
+            studentId=?
+[11:38:05] binding parameter [1] as [VARCHAR] - [adf]
+[11:38:05] binding parameter [2] as [VARCHAR] - [asdf]
+[11:38:05] binding parameter [3] as [VARCHAR] - [12-12-1999]
+[11:38:05] binding parameter [4] as [VARCHAR] - [asdf@gma.com]
+[11:38:05] binding parameter [5] as [VARCHAR] - [cha]
+[11:38:05] binding parameter [6] as [VARCHAR] - [0987654123]
+[11:38:05] binding parameter [7] as [VARCHAR] - [gc13234]

@@ -5,10 +5,12 @@ import finalAssignment.model.LecturerDao;
 
 import java.util.List;
 
-public class LecturerManager extends BaseState{
-    public void update_lecturer(Lecturer Lecturer) {
+public class LecturerManager{
+    public void update_lecturer(Lecturer lecturer) {
         LecturerDao lecturer_dao = new LecturerDao();
-        lecturer_dao.update(Lecturer);
+        LecturerValidator lecturerValidator = new LecturerValidator();
+        lecturerValidator.validateLecturer(lecturer);
+        lecturer_dao.update(lecturer);
     }
 
 
@@ -32,8 +34,10 @@ public class LecturerManager extends BaseState{
     }
 
 
-    public void create_lecturer(Lecturer Lecturer) {
+    public void create_lecturer(Lecturer lecturer) {
         LecturerDao lecturer_dao = new LecturerDao();
-        lecturer_dao.create(Lecturer);
+        LecturerValidator lecturerValidator = new LecturerValidator();
+        lecturerValidator.validateLecturer(lecturer);
+        lecturer_dao.create(lecturer);
     }
 }

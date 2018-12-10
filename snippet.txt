@@ -1,3 +1,4 @@
+mvn install
+mvn test
 mvn compile
 mvn exec:java
-JOptionPane.showMessageDialog(null, "My Goodness, this is so concise");

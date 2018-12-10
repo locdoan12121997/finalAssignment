@@ -11,7 +11,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class UpdateLecturerGui {
+public class UpdateLecturerGui extends BaseView{
     private JPanel mainPanel;
     private JLabel lecturerIdLabel;
     private JTextField lecturerIdTextField;
